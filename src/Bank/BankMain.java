@@ -7,7 +7,7 @@ public class BankMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Bank b=new Bank();
-		
+		String s;
 		Scanner sc = new Scanner(System.in);
 		int option;
 		System.out.println("=================================================");
@@ -69,9 +69,12 @@ public class BankMain {
 				break;
 
 			
-			}			
+			}	
+			 System.out.println("Do you want to continue");
+	    	   s=sc.next();
+
 		}
-		while(option != 8);
+		while(s.equals("yes"));
 		
 
 	}

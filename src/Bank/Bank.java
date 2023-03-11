@@ -97,14 +97,13 @@ public class Bank {
 		
 		int amount2 = scanner.nextInt();
 		
-		 if(balance>amount2  )
+		 if(balance>amount2 && amount2 != 0 )
 		{
 			
-		  if(amount2 != 0) {
-					balance = balance - amount2;
-					previousTransaction = -amount2;
+		 balance = balance - amount2;
+		previousTransaction = -amount2;
 					
-				}
+		
 		System.out.println("Your Amount Successfully Withdraw");
 		System.out.println("\n");
 		}
@@ -133,7 +132,7 @@ public class Bank {
 			System.out.println("Deposited: " + previousTransaction);
 		}
 		else if(previousTransaction < 0) {
-			System.out.println("Withdraw: " +Math.abs(previousTransaction)/*previousTransaction*/);
+			System.out.println("Withdraw: " +Math.abs(previousTransaction));
 		}
 		
 		else {
